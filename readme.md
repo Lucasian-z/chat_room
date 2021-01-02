@@ -18,7 +18,7 @@
 
 #### 使用
 ```shell
-v1.0
+v1.1
 	服务器端:
 		编译: g++ tcp_init.c tcp_server.cpp -o tcp_server
 		运行: ./tcp_server ip port
@@ -26,7 +26,7 @@ v1.0
 		编译: g++ tcp_client.c -o tcp_client
 		运行: ./tcp_client ip port
 
-v1.1
+v2.0
 	安装mysql数据库并创建对应表
 	服务器端:
 		编译: g++ tcp_init.c tcp_server.cpp use_mysql.c -o tcp_server -lmysqlclient
