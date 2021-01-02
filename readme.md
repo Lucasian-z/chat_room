@@ -23,7 +23,7 @@
 #### 使用
 ```shell
 Ubuntu端
-  v1.1
+  v1.1: 未实现用户信息存储，服务器端断开后会丢失所有信息
 	服务器端:
 		编译: g++ tcp_init.c tcp_server.cpp -o tcp_server
 		运行: ./tcp_server ip port
@@ -31,7 +31,7 @@ Ubuntu端
 		编译: g++ tcp_client.c -o tcp_client
 		运行: ./tcp_client ip port
 
-  v2.0
+  v2.0: 使用数据库存储用户信息及消息记录
 	安装mysql数据库并创建对应表
 	服务器端:
 		编译: g++ tcp_init.c tcp_server.cpp use_mysql.c -o tcp_server -lmysqlclient
