@@ -15,9 +15,6 @@
 #include <arpa/inet.h>
 #include <netdb.h>
 #include <sys/epoll.h>
-#include <map>
-#include <set>
-#include <string>
 #include <mysql.h>
 #include <my_global.h>
 
