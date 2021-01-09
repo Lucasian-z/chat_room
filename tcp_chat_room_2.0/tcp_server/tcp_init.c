@@ -9,7 +9,7 @@ int tcpInit(char *ip, char *port) {
 	serAddr.sin_addr.s_addr = inet_addr(ip);
 	serAddr.sin_port = htons(atoi(port));
 	//bind already use
-	int reuse = 0;
+	int reuse = 1;
 	int ret = setsockopt(socketFd, SOL_SOCKET, SO_REUSEADDR, &reuse, sizeof(reuse));
 	ERROR_CHECK(ret, -1, "setsockopt");
 	ret = bind(socketFd, (struct sockaddr*)&serAddr, sizeof(serAddr));
